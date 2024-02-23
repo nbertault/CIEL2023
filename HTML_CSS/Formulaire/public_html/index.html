@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Authentification</legend>
+                <input type="email" name="email" id="email" placeholder="Votre login (email)" required="required"/><br/>
+                <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required="required"/>
+            </fieldset><br/>
+            <fieldset>
+                <legend>Choix des options</legend>
+                <select name="element" id="element">
+                    <option value="">Choisissez votre élément</option>
+                    <option value="air">Air</option>
+                    <option value="feu">Feu</option>
+                    <option value="eau" selected="selected">Eau</option>
+                    <option value="terre">Terre</option>
+                </select><br/>
+                <label for="choix" id="text-sexe">
+                    Sexe:
+                    <input type="radio" name="choix" id="male" value="male"/>Male
+                    <input type="radio" name="choix" id="femelle" value="femelle"/>Femelle
+                    <input type="radio" name="choix" id="autre" value="autre" checked="checked"/>Autre
+                </label><br/>
+                <label for="newsletter" id="newsletter">
+                    Je souhaite recevoir la news letter
+                    <input type="checkbox" name="newsletter" id="newsletter" value="newsletter"/>
+                </label><br/>
+                <textarea cols="42" rows="5" name="commentaire" id="commentaire" placeholder="Commentaire"></textarea>
+            </fieldset>
+            <input type="submit" value="Envoyer"/>
+            <input type="reset" value="Effacer"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+@media screen and (min-width:900px){
+    div.blocsHaut:hover{
+        box-shadow: 0px 0px 20px 5px green;
+        border: 1px white solid;
+        border-radius: 5px;
+    }
+    div.blocsHaut{
+        font-size: 20px;
+    }
+div.blocsGauche{
+    width: 13%;
+}
+#bonplans{
+    font-size: 20px;
+}
+div.sousTitreGauche{
+    font-size: 5px;
+    text-transform: capitalize;
+}
+#alaune:hover{
+    background: green;
+}
+#offre:hover{
+    background: greenyellow;
+    color: black;
+}
+#besoin:hover{
+    background: cyan;
+    color: black;
+}
+#contact:hover{
+    background: blue;
+}
+#bonplans:hover{
+    background: purple;
+}
+#centre{
+    position: absolute;
+    top: 110px;
+    left: 15%;
+    height: 680px;
+    width: 1300px;
+}
+}
+@media screen and (min-width:750px){
+    
+}
+@media screen and (min-width:300px){
+    
+}
+@keyframes bougeVertical{
+    0% {background: darkgoldenrod; top: 15px}
+    100% {background: gold; top: 500px}
+}
+
+
+
+
+/* Haut de la page */
+/* ID */
+#particulier{
+    background: black;
+}
+#priority{
+    background: black;
+}
+#banquePrivee{
+    background: black;
+}
+#professionnels{
+    background: black;
+}
+#entreprises{
+    background: black;
+}
+#associations{
+    background: black;
+}
+/* class */
+div.blocsHaut{
+    
+}
+
+
+
+
+/* Côté de la page */
+/* ID */
+#alaune{
+    background: black;
+    color: white;
+}
+#offre{
+    background: black;
+    color: white;
+}
+#besoin{
+    background: black;
+    color: white;
+}
+#contact{
+    background: black;
+    color: white;
+}
+#logo{
+    background: black;
+    color: white;
+}
+#bonplans{
+    background: black;
+    color: white;
+}
+/* class */
+div.blocsGauche{
+    
+}
+div.sousTitreGauche{
+    
+}
+div.fond{
+    background: black;
+    width: 14%;
+}
+
+
+
+
+/* centre de la page */
+/* ID */
+#centre{
+    background: linear-gradient(to right, green, white);
+}
+#piece{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    border-radius: 15px;
+    background: darkgoldenrod;
+    animation: bougeVertical 3s linear 0s infinite;
+}
+#cochon{
+    position: absolute;
+    left: 43%;
+    top: 70%;
+}

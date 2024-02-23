@@ -1,0 +1,183 @@
+@media screen and (max-width:690px){
+    #fiche{
+        height: 620px;
+        width: 320px;
+    }
+    #titre{
+        font-size: 20px;
+    }
+    #portrait{
+        height: 230px;
+        width: 300px;
+        left: 10px
+    }
+    #stats{
+        height: 110px;
+        width: 300px;
+        position: relative;
+        font-size: 10px;
+        left: 10px;
+        bottom: 258px;
+    }
+    #attaque{
+        height: 160px;
+        width: 300px;
+        position: relative;
+        font-size: 10px;
+        left: 10px;
+        bottom: 88px;
+    }
+    #defense{
+        height: 68px;
+        width: 300px;
+        position: relative;
+        font-size: 10px;
+        left: 10px;
+        bottom: 10px;
+    }
+    img{
+        height:200px;
+        width:200px;
+    }
+}
+@media screen and (max-width:950px) and (min-width:690px){
+    #fiche{
+        height: 555px;
+        width: 680px;
+    }
+    #titre{
+        font-size: 15px;
+    }
+    #portrait{
+        height: 330px;
+        width: 400px;
+        position: relative;
+        left: 5px;
+        top: 5px;
+    }
+    #stats{
+        height: 150px;
+        width: 400px;
+        position: relative;
+        left: 10px;
+        top: 360px;
+    }
+    #attaque{
+        height: 250px;
+        width: 220px;
+        position: absolute;
+        left: 420px;
+        top: 75px;
+    }
+    #defense{
+        height: 92px;
+        width: 220px;
+        position: absolute;
+        left: 420px;
+        top: 375px;
+    }
+    img{
+        width:300px;
+        height:300px;
+        position: absolute;
+    }
+}
+@media screen and (min-width:950px){
+    #fiche{
+        height: 620px;
+        width: 930px;
+    }
+    #titre{
+        font-size: 20px;
+    }
+    #portrait{
+        color: yellow;
+        height: 430px;
+        width: 512px;
+        left: 25px;
+        top: 5px;
+    }
+    #stats{
+        height: 150px;
+        width: 450px;
+        position: relative;
+        top: 450px;
+        left: 50px;
+        font-size: 15px;
+    }
+    #attaque{
+        height: 250px;
+        width: 300px;
+        left: 600px;
+        top: 100px;
+        position: absolute;
+        font-size: 15px;
+    }
+    #defense{
+        height: 92px;
+        width: 300px;
+        left: 600px;
+        top: 400px;
+        position: absolute;
+        font-size: 15px;
+    }
+    img{
+        width:400px;
+        height:400px;
+    }
+}
+#fiche{
+    background: black;
+    position: absolute;
+    border-radius: 10px;
+}
+#portrait{
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(8,85,12,1) 100%);
+    border-radius: 10px;
+    border: 1px green solid;
+    position: relative;
+    text-align: center;
+    color: yellow;
+}
+#stats{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(169,37,210,1) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 10px;
+    border: 1px deeppink solid;
+    position: absolute;
+}
+#attaque{
+    background: linear-gradient(180deg, rgba(224,224,224,1) 0%, rgba(240,186,112,1) 36%, rgba(255,113,0,1) 100%);
+    border-radius: 10px;
+    border: 1px red solid;
+    position: absolute;
+}
+#defense{
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(46,227,255,1) 52%, rgba(34,33,255,1) 100%);
+    border-radius: 10px;
+    border: 1px cyan solid;
+    position: absolute;
+}
+#img{
+    position: relative;
+    animation: Image 5s linear 0s infinite alternate;
+}
+#titre{
+    font-style: italic;
+}
+#portrait:hover{
+    box-shadow: 10px 10px 20px 5px green;
+}
+#stats:hover{
+    box-shadow: 10px 10px 20px 5px deeppink;
+}
+#attaque:hover{
+    box-shadow: 10px 10px 20px 5px orange;
+}
+#defense:hover{
+    box-shadow: 10px 10px 20px 5px blue;
+}
+@keyframes Image
+{
+    0% {-moz-transform : rotateY(0deg)}
+    100% {-moz-transform : rotateY(360deg)}
+}

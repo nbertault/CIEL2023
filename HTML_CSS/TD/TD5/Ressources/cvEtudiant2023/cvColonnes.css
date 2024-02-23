@@ -1,0 +1,156 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 déc. 2014, 11:06:39
+    Author     : dbernard
+*/
+
+.cadreCivilite{
+    background-color: white;
+    /*text-align: center;*/
+    width: 200px;
+    height: 450px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 130px;
+    padding-bottom: 10px;
+    
+    /*height: 100px;*/
+    font-size: small;
+    border: 2px ridge blueviolet;
+    //border-radius: 25px;
+    //margin-bottom: 10px;
+    
+}
+.photo{
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    width: 80px;
+    height: 100px;
+}
+.nomPrenom{
+    font-weight: bold;
+    font-size: large;
+}
+.adresse{
+    font-style: italic;
+    
+}
+.ageTel{
+    font-style: normal;
+    
+}
+.courriel{
+    color: darkblue;
+    display: block;
+    
+}
+.typeStage{
+    font-weight: bold;
+    font-style: normal;
+    width: 190px;
+    display: block;
+}
+
+.cadreFormation{
+    position: absolute;
+    left: 250px;
+    top: 10px;
+        width: 650px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*height: 200px;*/
+   /* border: 2px ridge blueviolet;
+    border-radius: 25px;*/
+    font-size: small;
+    margin-bottom: 10px;
+    
+}
+.titreRubrique{     
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    display: block;
+    width: 400px;
+    /*border: 3px outset yellow;*/
+    background-color: #c8bcde;
+    /*border-radius: 15px;*/
+    color: black;
+    text-align: center;    
+    margin-bottom: 10px;
+}
+.diplome{
+    font-weight: bold;
+}
+.detailDiplome{
+    font-style: italic;
+}
+.cadreExperience{
+          position: absolute;
+    left: 250px;
+    top: 150px;
+        width: 650px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  /*  border: 2px ridge blueviolet;
+    border-radius: 25px;*/
+    font-size: small;
+    margin-bottom: 10px;
+    
+}
+.anneeExperience{
+    font-weight: bold;
+}
+.posteExperience{
+    font-style: normal;
+    
+}
+.entrepriseExperience{
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.periodeExperience{
+    font-style: italic;
+    
+}
+.descriptionExperience{
+    display: list-item;
+    margin-left: 30px;
+    
+}
+
+
+.cadreCompetences{
+          position: absolute;
+    left: 250px;
+    top: 400px;
+        width: 650px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*border: 2px ridge blueviolet;
+    border-radius: 25px;*/
+    font-size: small;
+    margin-bottom: 10px;
+    
+}
+.competence{
+    display: list-item;
+    margin-left: 30px;
+    font-weight: bold;
+    
+}
+.detailCompetence{
+    font-style: italic;
+    font-weight: normal;   
+}

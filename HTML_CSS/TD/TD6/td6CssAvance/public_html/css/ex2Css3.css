@@ -1,0 +1,14 @@
+div.degradeLineaire{
+    background: linear-gradient(to left,blue,white);
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+div.degradeRadial{
+    background: radial-gradient(100px,green,white);
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    left:330px;
+}

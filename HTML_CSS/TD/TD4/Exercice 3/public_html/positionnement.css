@@ -1,0 +1,75 @@
+#cadreHautGauche
+{
+    position: absolute;
+    background-color: burlywood;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 50%;
+}
+#cadreHautDroit
+{
+    position: absolute;
+    background-color: yellow;
+    left: 50%;
+    top: 0px;
+    width: 50%;
+    height: 50%;
+}
+#cadreBasGauche
+{
+    position: absolute;
+    background-color: cadetblue;
+    left: 0px;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+}
+#cadreBasDroit
+{
+    position: absolute;
+    background-color: magenta;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+}
+div.boite1
+{
+    position: absolute;
+    background-color: pink;
+    z-index: 0;
+    height: 50%;
+    top: 1%;
+    width: 15%;
+}
+div.boite2
+{
+    position: absolute;
+    background-color: orange;
+    z-index: 1;
+    height: 50%;
+    left: 60px;
+    top: 11%;
+    width: 15%;
+}
+div.boite3
+{
+    position: absolute;
+    background-color: skyblue;
+    z-index: 2;
+    height: 50%;
+    left: 115px;
+    top: 21%;
+    width: 15%;
+}
+div.boite4
+{
+    position: absolute;
+    background-color: limegreen;
+    z-index: 3;
+    height: 50%;
+    left: 170px;
+    top: 31%;
+    width: 15%;
+}

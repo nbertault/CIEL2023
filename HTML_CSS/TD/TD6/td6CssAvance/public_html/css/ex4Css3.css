@@ -1,0 +1,15 @@
+div.clique{
+    border: 2px black dotted;
+    width:100px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+div.clique:active{
+        animation: bougeHorizontal 5s linear 0s infinite alternate;
+}
+@keyframes bougeHorizontal
+{
+    0% {background: red; left:10px; top:10px}
+    100% {background: brown; left:50%; top:10px}
+}

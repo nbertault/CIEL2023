@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Calculatrice IPv4:  Fichier source de /home/USERS/ELEVES/CIEL2023/nbertault/Documents/TD/Language_C++/Calculatrice_IPV4/ipv4.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Sans titre.jpeg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Calculatrice IPv4
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Calcul d&#39;adresse IPv4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('ipv4_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/home/USERS/ELEVES/CIEL2023/nbertault/Documents/TD/Language_C++/Calculatrice_IPV4/ipv4.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ipv4_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file    Ipv4.cpp</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @brief   Déclaration de la classe Ipv4</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @author  nbertault</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * @version 1.0</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * @date    14/02/2024</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef IPV4_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define IPV4_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_i_pv4.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_pv4.html">IPv4</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_i_pv4.html#a13779738794c5b00e1ee645cee8ff09b">IPv4</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * _adresse, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> _cidr);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_i_pv4.html#a13779738794c5b00e1ee645cee8ff09b">IPv4</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * _adresse, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * _masque);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_i_pv4.html#ab467334e018706a54751a4af667ec3a6">~IPv4</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_i_pv4.html#a8c190dee9c4b4554d557470f36fa5952">ObtenirMasque</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * _masque);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_i_pv4.html#a0d305f90283d84f572ed6c3588b77fda">ObtenirAdresseReseau</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * _reseau);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_i_pv4.html#ab8d0b3c0eb10dc89d77df2c068a7eea7">ObtenirAdresseDiffusion</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * _diffusion);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_i_pv4.html#a2d0418d94bc8049baa081e35c16333f3">operator= </a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * _adresse);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_i_pv4.html#a13bc6b0811d5089a60438fff50549cad">ObtenirPremiereAdresse</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * _premiere);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_i_pv4.html#a62cd59803c7d7ff3de837cfdf6b9a98d">ObtenirDerniereAdresse</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * _derniere);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_i_pv4.html#a166910a3ab2583bdcf4409e6df61450f">CalculerNombreHote</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *_masque);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_i_pv4.html#aece762c3d40cd1386798cdef34fb0a07">   27</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * <a class="code" href="class_i_pv4.html#aece762c3d40cd1386798cdef34fb0a07">adresse</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_i_pv4.html#ab1d599ca4cb6fa9bd7efd892d741f561">   30</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> * <a class="code" href="class_i_pv4.html#ab1d599ca4cb6fa9bd7efd892d741f561">masque</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_i_pv4.html#a1ea3bf78ad229baeed202617b806f219">CalculerMasque</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> _cidr); <span class="comment">// _cidr est utilisé en tant que variable locale dans la</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// méthode (pas de const devant)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IPV4_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_i_pv4_html_a0d305f90283d84f572ed6c3588b77fda"><div class="ttname"><a href="class_i_pv4.html#a0d305f90283d84f572ed6c3588b77fda">IPv4::ObtenirAdresseReseau</a></div><div class="ttdeci">void ObtenirAdresseReseau(unsigned char *_reseau)</div><div class="ttdoc">IPv4::ObtenirAddresseReseau Calcul l'adresse réseau et la copie dans le tableau _reseau.</div><div class="ttdef"><b>Definition:</b> ipv4.cpp:92</div></div>
+<div class="ttc" id="aclass_i_pv4_html_a13779738794c5b00e1ee645cee8ff09b"><div class="ttname"><a href="class_i_pv4.html#a13779738794c5b00e1ee645cee8ff09b">IPv4::IPv4</a></div><div class="ttdeci">IPv4(const unsigned char *_adresse, const unsigned char _cidr)</div><div class="ttdoc">IPv4::IPv4.</div><div class="ttdef"><b>Definition:</b> ipv4.cpp:18</div></div>
+<div class="ttc" id="aclass_i_pv4_html_a8c190dee9c4b4554d557470f36fa5952"><div class="ttname"><a href="class_i_pv4.html#a8c190dee9c4b4554d557470f36fa5952">IPv4::ObtenirMasque</a></div><div class="ttdeci">void ObtenirMasque(unsigned char *_masque)</div><div class="ttdoc">IPv4::ObtenirMasque.</div><div class="ttdef"><b>Definition:</b> ipv4.cpp:82</div></div>
+<div class="ttc" id="aclass_i_pv4_html_a166910a3ab2583bdcf4409e6df61450f"><div class="ttname"><a href="class_i_pv4.html#a166910a3ab2583bdcf4409e6df61450f">IPv4::CalculerNombreHote</a></div><div class="ttdeci">int CalculerNombreHote(unsigned char *_masque)</div><div class="ttdoc">IPv4::CalculerNombreHote.</div><div class="ttdef"><b>Definition:</b> ipv4.cpp:169</div></div>
+<div class="ttc" id="aclass_i_pv4_html_aece762c3d40cd1386798cdef34fb0a07"><div class="ttname"><a href="class_i_pv4.html#aece762c3d40cd1386798cdef34fb0a07">IPv4::adresse</a></div><div class="ttdeci">unsigned char * adresse</div><div class="ttdoc">Addresse du tableau dynamique contenant l'adresse Ipv4.</div><div class="ttdef"><b>Definition:</b> ipv4.h:27</div></div>
+<div class="ttc" id="aclass_i_pv4_html"><div class="ttname"><a href="class_i_pv4.html">IPv4</a></div><div class="ttdef"><b>Definition:</b> ipv4.h:12</div></div>
+<div class="ttc" id="aclass_i_pv4_html_a1ea3bf78ad229baeed202617b806f219"><div class="ttname"><a href="class_i_pv4.html#a1ea3bf78ad229baeed202617b806f219">IPv4::CalculerMasque</a></div><div class="ttdeci">void CalculerMasque(unsigned char _cidr)</div><div class="ttdoc">IPv4::CalculerMasque.</div><div class="ttdef"><b>Definition:</b> ipv4.cpp:57</div></div>
+<div class="ttc" id="aclass_i_pv4_html_a13bc6b0811d5089a60438fff50549cad"><div class="ttname"><a href="class_i_pv4.html#a13bc6b0811d5089a60438fff50549cad">IPv4::ObtenirPremiereAdresse</a></div><div class="ttdeci">void ObtenirPremiereAdresse(unsigned char *_premiere)</div><div class="ttdoc">IPv4::PremiereAdresse.</div><div class="ttdef"><b>Definition:</b> ipv4.cpp:125</div></div>
+<div class="ttc" id="aclass_i_pv4_html_ab8d0b3c0eb10dc89d77df2c068a7eea7"><div class="ttname"><a href="class_i_pv4.html#ab8d0b3c0eb10dc89d77df2c068a7eea7">IPv4::ObtenirAdresseDiffusion</a></div><div class="ttdeci">void ObtenirAdresseDiffusion(unsigned char *_diffusion)</div><div class="ttdoc">IPv4::ObtenirAddresseDiffusion.</div><div class="ttdef"><b>Definition:</b> ipv4.cpp:102</div></div>
+<div class="ttc" id="aclass_i_pv4_html_ab1d599ca4cb6fa9bd7efd892d741f561"><div class="ttname"><a href="class_i_pv4.html#ab1d599ca4cb6fa9bd7efd892d741f561">IPv4::masque</a></div><div class="ttdeci">unsigned char * masque</div><div class="ttdoc">Addresse du tableau dynamique contenant le masque.</div><div class="ttdef"><b>Definition:</b> ipv4.h:30</div></div>
+<div class="ttc" id="aclass_i_pv4_html_a62cd59803c7d7ff3de837cfdf6b9a98d"><div class="ttname"><a href="class_i_pv4.html#a62cd59803c7d7ff3de837cfdf6b9a98d">IPv4::ObtenirDerniereAdresse</a></div><div class="ttdeci">void ObtenirDerniereAdresse(unsigned char *_derniere)</div><div class="ttdoc">IPv4::DerniereAdresse.</div><div class="ttdef"><b>Definition:</b> ipv4.cpp:147</div></div>
+<div class="ttc" id="aclass_i_pv4_html_a2d0418d94bc8049baa081e35c16333f3"><div class="ttname"><a href="class_i_pv4.html#a2d0418d94bc8049baa081e35c16333f3">IPv4::operator=</a></div><div class="ttdeci">void operator=(const char *_adresse)</div><div class="ttdoc">IPv4::operator=.</div><div class="ttdef"><b>Definition:</b> ipv4.cpp:114</div></div>
+<div class="ttc" id="aclass_i_pv4_html_ab467334e018706a54751a4af667ec3a6"><div class="ttname"><a href="class_i_pv4.html#ab467334e018706a54751a4af667ec3a6">IPv4::~IPv4</a></div><div class="ttdeci">~IPv4()</div><div class="ttdoc">IPv4::~IPv4.</div><div class="ttdef"><b>Definition:</b> ipv4.cpp:47</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="ipv4_8h.html">ipv4.h</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>
