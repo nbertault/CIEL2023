@@ -1,0 +1,45 @@
+/*
+body
+{
+    background-color: aquamarine
+}
+img 
+{
+    border: 1px black solid;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+img
+{
+    position: absolute;
+}
+.ligne1
+{
+    top: 100px;
+}
+.ligne2
+{
+    top: 200px;
+}
+.col1
+{
+    left: 100px;
+}
+.col2
+{
+    left: 200px;
+}
+.col3
+{
+    left: 300px;
+}
+.col4
+{
+    left: 400px;
+}
+.col5
+{
+    left: 500px;
+}
+*/

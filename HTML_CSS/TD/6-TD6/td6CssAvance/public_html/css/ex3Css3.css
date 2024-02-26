@@ -1,0 +1,61 @@
+@media screen and (min-width:300px)
+{
+    div.boite1{
+        left: 20px;
+        top: 50px;
+    }
+    div.boite2{
+        left: 20px;
+        top: 260px;
+    }
+    div.boite3{
+        left: 20px;
+        top: 470px;
+    }
+}
+@media screen and (min-width:600px)
+{
+    div.boite1{
+        left: 20px;
+        top: 50px;
+    }
+    div.boite2{
+        left: 230px;
+        top: 50px;
+    }
+    div.boite3{
+        left: 20px;
+        top: 260px;
+    }
+}
+@media screen and (min-width:900px)
+{
+    div.boite1{
+        left: 20px;
+        top: 50px;
+    }
+    div.boite2{
+        left: 230px;
+        top: 50px;
+    }
+    div.boite3{
+        left: 440px;
+        top: 50px;
+    }
+}
+div.boites{
+    width: 200px;
+    height: 200px;
+}
+div.boite1{
+    background-color: green;
+    position: absolute;
+}
+div.boite2{
+    background-color: greenyellow;
+    position: absolute;
+}
+div.boite3{
+    background-color: hotpink;
+    position: absolute;
+}

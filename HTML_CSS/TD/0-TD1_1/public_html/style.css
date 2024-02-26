@@ -1,0 +1,22 @@
+
+<html>
+    <head>
+        <title>TD1_1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style='text-align: center'>
+             <h1 style='color: #3dffaa'>
+                Création de sites internet
+            </h1>
+            <p style='color: #ff2f55'>
+                <b>Voici un paragraphe</b>
+            </p>
+            <img src="CYBER_SECURITE.JPEG" alt="Image CYBER" style="width: 60%"/>
+        </div>
+        <a href="page 2.html">lien vers la page 2</a><br/>
+        <a href='https://google.fr'>lien vers google</a>
+       
+    </body>
+</html>

@@ -1,0 +1,5 @@
+Croiseur C3 3 V
+Cuirassé H5 4 H
+Porte-avions A1 5 H
+Sous-marin A10 3 V
+Destroyer L9 2 H

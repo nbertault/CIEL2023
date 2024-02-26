@@ -1,0 +1,49 @@
+.table1 {
+    margin-top: 10px; /* Pour centrer horizontalement */
+    text-align: center; /* Pour centrer le contenu du tableau */
+}
+
+table, th, td {
+    border: 1px solid black;
+    width: 70%; /* Largeur du tableau */
+    height: 5%; /* Hauteur du tableau */
+    margin: 15% auto; /* Pour centrer verticalement */
+
+}
+.Drapeau{
+    width: 10%;
+    height: 10%;
+}
+
+.image-border {
+    border: 2px solid #000; /* Couleur et largeur de la bordure */
+    display: inline-block; /* Pour entourer l'image */
+    border-radius: 30px;
+    margin: 10px;
+}
+.fond {
+    background-image: url('images/Histoire/fond.jpg');
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: repeat;
+    z-index: -1;
+    top: 15%;
+    opacity: 0.3
+}
+.zone_text{
+    background-color: white; 
+    padding: 50px; 
+    opacity: 0.8
+}
+.content-container {
+    background-image: url('images/Histoire/fond.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Ajuste la taille de l'image pour remplir le conteneur */
+    padding: 100px; /* Espacement autour du texte */
+}
+.content-container2 {
+    background-image: url('images/stat/fond.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* Ajuste la taille de l'image pour remplir le conteneur */
+    padding: 100px; /* Espacement autour du texte */
+}

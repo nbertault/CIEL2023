@@ -1,0 +1,530 @@
+/* 
+    Document   : edtCial1Css.css
+    Created on : 10 janv. 2012, 11:14:33
+    Author     : dbernard
+    Mis à jour : pcruchet 5/09/2023
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+/* titre*/
+#titre{
+    position: absolute;
+    
+	
+	
+}
+
+/* placement horizontal des jours*/
+.lundi{
+    position: absolute;
+    left: 150px;    
+}
+
+.lundig1{
+    position: absolute;
+    left: 150px;    
+}
+.lundig2{
+    position: absolute;
+    left: 241px;    
+}
+
+.mardi{
+    position: absolute;
+    left: 340px;    
+}
+
+.mardig1{
+    position: absolute;
+    left: 340px;        
+}
+
+.mardig2{
+    position: absolute;
+    left: 431px;        
+}
+
+
+.mercredi{
+    position: absolute;
+    left: 530px;    
+}
+
+.mercredig1{
+    position: absolute;
+    left: 530px;    
+}
+.mercredig2{
+    position: absolute;
+    left: 621px;    
+}
+
+.jeudi{
+    position: absolute;
+    left: 720px;    
+}
+.jeudig1{
+    position: absolute;
+    left: 720px;    
+}
+.jeudig2{
+    position: absolute;
+    left: 811px;    
+}
+
+.vendredi{
+    position: absolute;
+    left: 910px;    
+}
+.vendredig1{
+     
+}
+
+.vendredig2{
+     
+}
+
+/* hauteur pour le nombre d'heures */
+.uneHeure{
+    height: 50px;  
+    line-height: 15px;
+}
+
+.uneHeureTrente{
+    height: 75px;  
+    line-height: 20px;
+}
+
+.deuxHeures{
+    height: 110px;    
+    line-height: 30px;
+}
+.troisHeures{
+    height: 170px;
+    line-height: 40px;
+}
+
+.quatreHeures{
+    height: 230px;
+    line-height: 40px;
+}
+
+/* largeur pour classe ou groupe*/
+.classeEntiere{
+    width: 180px;    /*150px*/
+    font-size: small;
+}
+
+.demiGroupe{
+    width: 90px;   /*72px*/
+    font-size: xx-small;
+}
+
+/* placement vertical en fonction de l'heure*/
+.huitHeure{
+    position: absolute;
+    top: 80px;
+}
+
+.huitHeureTrente{
+    position: absolute;
+    top: 105px;
+}
+
+.neufHeure{
+    position: absolute;
+    top: 140px;
+}
+
+.neufHeureTrente{
+    position: absolute;
+    top: 165px;
+}
+
+.dixHeure{
+    position: absolute;
+    top: 200px;
+
+}
+
+.onzeHeure{
+    position: absolute;
+    top: 260px;
+}
+
+.douzeHeure{
+    position: absolute;
+    top: 320px;
+}
+
+.douzeHeureTrente{
+    position: absolute;
+    top: 350px;
+}
+
+.treizeHeure{
+    position: absolute;
+    top: 380px;
+}
+
+.treizeHeureTrente{
+    position: absolute;
+    top: 410px;
+}
+
+.quatorzeHeure{
+    position: absolute;
+    top: 440px;
+}
+
+.quatorzeHeureTrente{
+    position: absolute;
+    top: 470px;
+}
+
+.quinzeHeure{
+    position: absolute;
+    top: 500px;
+}
+.seizeHeure{
+    position: absolute;
+    top: 560px;
+}
+
+.dixseptHeure{
+    position: absolute;
+    top: 620px;
+}
+
+/* style des jours de la semaine*/
+#lundi{
+    background-color: #EEEEEE;
+    width: 180px;
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    text-align: center;
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+}
+
+#mardi{
+    background-color: #DDDDDD;
+    width: 180px;
+    position: absolute;
+    left: 340px;
+    top: 50px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+}
+
+#mercredi{
+    background-color: #CCCCCC;
+    width: 180px;
+    position: absolute;
+    left: 530px;
+    top: 50px;
+    text-align: center;    
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+}
+
+#jeudi{
+    background-color: #BBBBBB;
+    width: 180px;
+    position: absolute;
+    left: 720px;
+    top: 50px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+}
+
+#vendredi{
+    background-color: #AAAAAA;
+    width: 180px;
+    position: absolute;
+    left: 910px;
+    top: 50px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+}
+
+/* style des heures*/
+#huit{
+    background-color: #FFF0F0;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 80px;
+    height: 34px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#neuf{
+    background-color: #FFE0E0;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    height: 34px;
+    top: 140px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#dix{
+    background-color: #FFD0D0;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    height: 34px;
+    top: 200px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#onze{
+    background-color: #FFc0c0;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    height: 34px;
+    top: 260px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#douze{
+    background-color: #FFb0b0;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    height: 34px;
+    top: 320px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#treize{
+    background-color: #FFa0a0;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    height: 34px;
+    top: 380px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#quatorze{
+    background-color: #FF9090;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    height: 34px;
+    top: 440px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#quinze{
+    background-color: #FF8080;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    height: 34px;
+    top: 500px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#seize{
+    background-color: #FF7070;
+    width: 100px;
+    position: absolute;
+    padding-top: 5px;
+    left: 10px;
+    height: 34px;
+    top: 560px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#dixsept{
+    background-color: #FF6060;
+    width: 100px;
+    position: absolute;
+    padding-top: 5px;
+    left: 10px;
+    height: 34px;
+    top: 620px;
+    text-align: center; 
+    border: 2px;
+    border-style: ridge;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* style des matieres*/
+
+.cultGenerale{
+    background-color: #9900ff;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px;
+    border-style: outset;
+    border-color: #CCCCCC;    
+}
+
+.math{
+    background-color: #ff0099;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px;
+    border-style: outset;
+    border-color: #CCCCCC;    
+}
+
+.anglais{
+    background-color: yellow;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px;
+    border-style: outset;
+    border-color: #CCCCCC;    
+}
+
+.accPerso{
+    background-color: #ff5555;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px;
+    border-style: outset;
+    border-color: #CCCCCC;    
+}
+
+.physique{
+    
+}
+
+.esla{
+    
+}
+
+.informatique{
+   
+}
+

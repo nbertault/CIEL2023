@@ -1,0 +1,133 @@
+/*
+div.survol:hover{
+    background-color: greenyellow;
+}
+div.clique:active{
+    background-color: red;
+}
+div.arrondie{
+    background-color: blue;
+    text-align: center;
+    border: 3px cyan solid;
+    border-radius: 10px;
+}
+div.ombre{
+    box-shadow: 10px 10px 20px 5px violet;
+    background-color: blue;
+    text-align: center;
+    width: 300px;
+}
+div.bordurerep{
+    border: 15px solid transparent;
+    border-image: url(IMAGEBORDURE.PNG) 35 35 round;
+    text-align: center;
+    width: 300px;
+}
+div.bordureet{
+    border: 15px solid transparent;
+    border-image: url(IMAGEBORDURE.PNG) 35 35 stretch;
+    text-align: center;
+    width: 300px;
+}
+div.dégradé1{
+    background: linear-gradient(to left, yellow,red);
+    width: 200px;
+    height: 200px;
+}
+div.dégradé2{
+    background: radial-gradient(100px,yellow,red);
+    width: 200px;
+    height: 200px;
+}
+div.pastrot{
+    background: lightgray;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 300px;
+    top:300px;
+    z-index: 0;
+}
+div.rot{
+    background: blue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 300px;
+    top:300px;
+    transform: rotate(15deg);
+    z-index: 1;
+}
+div.pascal{
+    background: lightgray;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 700px;
+    top:300px;
+    z-index: 0;
+}
+div.scal{
+    background: blue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 700px;
+    top:300px;
+    transform: scale(2,0.5);
+    z-index: 1;
+}
+div.passkew{
+    background: lightgray;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 1000px;
+    top:100px;
+    z-index: 0;
+}
+div.skew{
+    background: blue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 1000px;
+    top:100px;
+    transform: skew(-45deg,15deg);
+    z-index: 1;
+}
+*/
+@keyframes bougeHorizontal
+{
+    0% {background: red; left: 0px; top 100px}
+    50% {background: violet; left: 200px; top 100px}
+    100% {background: blue; left: 400px; top 100px}
+}
+div.bouleAnim{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: red;
+    position: relative;
+    animation: bougeHorizontal 5s linear 0s infinite alternate;
+}
+@media screen and (min-width: 640px)
+{div.bigCarre{
+     position: absolute;
+     top: 10px;
+     left: 10px;
+     width: 620px;
+     background-color: yellowgreen;
+     height: 320px;
+ }
+}
+@media screen and (min-width: 800px)
+{div.bigCarre{
+     position: absolute;
+     top: 10px;
+     left: 10px;
+     width: 780px;
+     background-color: blue;
+     height: 320px;
+ }
+}

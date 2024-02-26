@@ -1,0 +1,74 @@
+#ru
+{
+    position: absolute;
+    left: 115px;
+    top: 54px;
+    z-index: 15 !important;
+}
+#jap
+{
+    position: absolute;
+    left: 139px;
+    top: 72px;
+    z-index: 15 !important;    
+}
+#usa
+{
+    position: absolute;
+    left: 148px;
+    top: 100px;
+    z-index: 15 !important;    
+}
+#fr
+{
+    position: absolute;
+    left: 139px;
+    top: 128px;
+    z-index: 15 !important;    
+}
+#ch
+{
+    position: absolute;
+    left: 115px;
+    top: 146px;
+    z-index: 15 !important;    
+}
+#cs
+{
+    position: absolute;
+    left: 85px;
+    top: 146px;
+    z-index: 15 !important;    
+}
+#gb
+{
+    position: absolute;
+    left: 61px;
+    top: 128px;
+    z-index: 15 !important;    
+}
+#al
+{
+    position: absolute;
+    left: 52px;
+    top: 100px;
+    z-index: 15 !important;    
+}
+#au
+{
+    position: absolute;
+    left: 61px;
+    top: 72px;
+    z-index: 15 !important;    
+}
+#it
+{
+    position: absolute;
+    left: 85px;
+    top: 54px;
+    z-index: 15 !important;    
+}
+img:hover{
+    border: 2px red ridge;
+    z-index: 15 !important;
+}
