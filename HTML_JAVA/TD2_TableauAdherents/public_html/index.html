@@ -4,31 +4,23 @@
         <title>Tableau Adhérents</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js"></script>
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-        <script src="js/Fonctions.js" type="text/javascript"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/Fonctions.js"></script>
     </head>
     <body>
         <div class="container">
             <h1>Liste des adhérents</h1>
             <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-end">
-                    <li class="page-item"><a class="page-link" href="#">Précédent</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Suivant</a></li>
+                <ul class="pagination justify-content-end" id="pagination">
                 </ul>
             </nav>
             <table class="table table-secondary table-striped table-bordered">
                 <thead>
                     <tr class="table-secondary">
-                        <th class="table-secondary">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            </div>
-                        </th>
+                        <th class="text-center"><input type="checkbox" class="form-check-input" id="checkGeneral"></th>
                         <th class="table-secondary">Nom</th>
                         <th class="table-secondary">Prénom</th>
                         <th class="table-secondary">Adresse</th>
@@ -42,6 +34,21 @@
             </table>
         </div>
 
+        <div class="modal fade" id="detailsModal" aria-labelledby="detailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="detailsModalLabel">Détails de l'adhérent</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Les détails de l'adhérent seront injectés ici -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <nav aria-label="Page navigation" >
             <ul class="pagination justify-content-end" id="pagination"></ul>
         </nav>
@@ -49,49 +56,68 @@
         <!-- Modal Ajouter -->
         <div class="p-2"  aria-labelledby="Ajouter">
 
-            <!-- The Modal --> 
+            <!-- The Modal -->
             <div class="modal" id="Modal-AjouterModifier">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
 
                         <!-- Modal Header -->
                         <div class="modal-header">
-                            <h4 class="modal-title">Ajouter/Modifier</h4>
+                            <h4 class="modal-title">Modification de l'adhérent</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
 
                         <!-- Modal body -->
+
                         <div class="modal-body">
-                            <!<!-- Champ du Prénom -->
-                            <div class='form-group mb-3'>
-                                <label class="form-label">Prénom :</label>
-                                <input type="text" class="form-control w-50" id="prénom"/>
-                            </div>
+                            <form>
+                                <!-- Champ du Nom -->
+                                <div class='form-group mb-3'>
+                                    <label class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="nom"/>
+                                </div>
+
+                                <!-- Champ du Prénom -->
+                                <div class='form-group mb-3'>
+                                    <label class="form-label">Prénom</label>
+                                    <input type="text" class="form-control" id="prenom"/>
+                                </div>
+
+                                <!-- Champ de l'Adresse -->
+                                <div class='form-group mb-3'>
+                                    <label class="form-label">Adresse</label>
+                                    <input type="text" class="form-control" id="adresse"/>
+                                </div>
 
 
-                            <!<!-- Champ du Nom -->
-                            <div class='form-group mb-3'>
-                                <label class="form-label">Nom :</label>
-                                <input type="text" class="form-control w-50" id="nom"/>
-                            </div>
+                                <div class='row'>
+                                    <!-- Champ du Code postal-->
+                                    <div class='col-5'>
+                                        <label class="form-label">Code postal
+                                            <input type="text" class="form-control" id="code_postal"/>
+                                        </label>
+                                    </div>
 
-                            <!<!-- Champ du E-Mail -->
-                            <div class='form-group mb-3'>
-                                <label class="form-label">E-Mail :</label>
-                                <input type="text" class="form-control w-50" id="email"/>
-                            </div>
+                                    <!-- Champ de la ville -->
+                                    <div class='col-7'>
+                                        <label class="form-label">Ville
+                                            <input type="text" class="form-control" id="ville"/>
+                                        </label>
+                                    </div>
+                                </div>
 
-                            <!<!-- Champ du Adresse -->
-                            <div class='form-group'>
-                                <label class="form-label">Adresse :</label>
-                                <input type="text" class="form-control w-50" id="adresse"/>
-                            </div>
+                                <!-- Champ de l'E-Mail -->
+                                <div class='form-group mb-3'>
+                                    <label class="form-label">Adresse mail</label>
+                                    <input type="text" class="form-control" id="email"/>
+                                </div>
+                            </form>
                         </div>
 
                         <!-- Modal footer -->
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Sauvegarder</button>
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" id='enregistrer'>Enregistrer les modifications</button>
                         </div>
 
                     </div>
@@ -127,6 +153,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </body>
 </html>

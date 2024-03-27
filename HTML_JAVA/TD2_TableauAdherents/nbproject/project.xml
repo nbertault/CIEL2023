@@ -5,5 +5,10 @@
         <data xmlns="http://www.netbeans.org/ns/clientside-project/1">
             <name>TD1_TableauAdherents</name>
         </data>
+        <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1">
+            <library name="jquery" version="3.7.1">
+                <file localPath="public_html/js/libs/jquery/jquery.js" path="jquery.js"/>
+            </library>
+        </libraries>
     </configuration>
 </project>
