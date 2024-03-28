@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1er cour</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/mesFonctions.js" ></script>
+    </head>
+    <body onload="demanderNom();">
+        <div onclick="afficherInfo()" id="divClique"> Cliquer sur moi </div>
+        <form name="monForm">
+            <label for="idLogin">Votre login</label>
+            <input type="text" name="login" id="idLogin" onchange="afficher();"/>
+            <input type="button" value="envoyer" onclick="confirmer();"/>
+        </form>
+    </body>
+</html>
