@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mise en oeuvre</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="participants" action="traitement.php" method="GET">
+            <label for="nom">Nom du participant : </label>
+            <input type="text" id="nom" name="nom">
+            <label for="numCours">ID du cours : </label>
+            <input type="number" id="numCours" name="numCours" min="1" max="12">
+            <button type="submit" id="envoyer">Envoyer</button>
+        </form>
+    </body>
+</html>
