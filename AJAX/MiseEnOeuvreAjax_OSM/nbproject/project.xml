@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.php.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/php-project/1">
+            <name>MiseEnOeuvreAjax_OSM</name>
+        </data>
+        <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1">
+            <library name="leaflet" version="1.9.4">
+                <file localPath="js/libs/leaflet/images/layers-2x.png" path="images/layers-2x.png"/>
+                <file localPath="js/libs/leaflet/images/layers.png" path="images/layers.png"/>
+                <file localPath="js/libs/leaflet/images/marker-icon-2x.png" path="images/marker-icon-2x.png"/>
+                <file localPath="js/libs/leaflet/images/marker-icon.png" path="images/marker-icon.png"/>
+                <file localPath="js/libs/leaflet/images/marker-shadow.png" path="images/marker-shadow.png"/>
+                <file localPath="js/libs/leaflet/leaflet-src.js.map" path="leaflet-src.js.map"/>
+                <file localPath="js/libs/leaflet/leaflet-src.min.js" path="leaflet-src.min.js"/>
+                <file localPath="js/libs/leaflet/leaflet.js.map" path="leaflet.js.map"/>
+                <file localPath="js/libs/leaflet/leaflet.min.css" path="leaflet.min.css"/>
+                <file localPath="js/libs/leaflet/leaflet.min.js" path="leaflet.min.js"/>
+            </library>
+        </libraries>
+    </configuration>
+</project>

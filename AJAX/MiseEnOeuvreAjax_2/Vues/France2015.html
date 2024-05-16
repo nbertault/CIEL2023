@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>France 2015</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="France2015.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="my-5">Une donnée envoyée, N données reçues :</h1>
+            <form>
+                <div class="row">    
+                    <div class="col-4">
+                        <div class="input-group me-3">
+                            <div class="input-group-text">Région</div>
+                            <select name="regions" class="form-select" id="regions">
+                                <option value="-1" selected="selected">Sélectionnez une région</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group me-3 col-4">
+                            <div class="input-group-text">Département</div>
+                            <select name="departements" class="form-select" id="departements">
+                            <option value="-1" selected="selected">Sélectionnez un département</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group col-4">
+                            <div class="input-group-text">Ville</div>
+                            <select name="villes" class="form-select" id="villes">
+                                <option value="-1" selected="selected">Sélectionnez une ville</option>
+                            </select>
+                        </div>  
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
