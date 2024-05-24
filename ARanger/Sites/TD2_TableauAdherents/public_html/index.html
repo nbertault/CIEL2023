@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tableau Adhérents</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/Fonctions.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Liste des adhérents</h1>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end" id="pagination">
+                </ul>
+            </nav>
+            <table class="table table-secondary table-striped table-bordered">
+                <thead>
+                    <tr class="table-secondary">
+                        <th class="text-center"><input type="checkbox" class="form-check-input" id="checkGeneral"></th>
+                        <th class="table-secondary">Nom</th>
+                        <th class="table-secondary">Prénom</th>
+                        <th class="table-secondary">Adresse</th>
+                        <th class="table-secondary">Téléphone</th>
+                        <th class="table-secondary">Adresse mail</th>
+                        <th class="table-secondary" colspan="2"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal fade" id="detailsModal" aria-labelledby="detailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="detailsModalLabel">Détails de l'adhérent</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Les détails de l'adhérent seront injectés ici -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation" >
+            <ul class="pagination justify-content-end" id="pagination"></ul>
+        </nav>
+
+        <!-- Modal Ajouter -->
+        <div class="p-2"  aria-labelledby="Ajouter">
+
+            <!-- The Modal -->
+            <div class="modal" id="Modal-AjouterModifier">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Modification de l'adhérent</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+
+                        <div class="modal-body">
+                            <form>
+                                <!-- Champ du Nom -->
+                                <div class='form-group mb-3'>
+                                    <label class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="nom"/>
+                                </div>
+
+                                <!-- Champ du Prénom -->
+                                <div class='form-group mb-3'>
+                                    <label class="form-label">Prénom</label>
+                                    <input type="text" class="form-control" id="prenom"/>
+                                </div>
+
+                                <!-- Champ de l'Adresse -->
+                                <div class='form-group mb-3'>
+                                    <label class="form-label">Adresse</label>
+                                    <input type="text" class="form-control" id="adresse"/>
+                                </div>
+
+
+                                <div class='row'>
+                                    <!-- Champ du Code postal-->
+                                    <div class='col-5'>
+                                        <label class="form-label">Code postal
+                                            <input type="text" class="form-control" id="code_postal"/>
+                                        </label>
+                                    </div>
+
+                                    <!-- Champ de la ville -->
+                                    <div class='col-7'>
+                                        <label class="form-label">Ville
+                                            <input type="text" class="form-control" id="ville"/>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Champ de l'E-Mail -->
+                                <div class='form-group mb-3'>
+                                    <label class="form-label">Adresse mail</label>
+                                    <input type="text" class="form-control" id="email"/>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" id='enregistrer'>Enregistrer les modifications</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Supprimer -->
+        <div class="p-2"  aria-labelledby="Supprimer">          
+
+            <!-- The Modal --> 
+            <div class="modal" id="Modal-Supprimer">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Ajouter</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <p>Êtes vous sur de vouloir supprimer ce(s) utilisateur(s) ?<p>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Supprimer</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>

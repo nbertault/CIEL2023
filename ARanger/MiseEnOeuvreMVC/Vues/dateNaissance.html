@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modification Naissance</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="dateNaissance.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-5">
+                <h1 class="col-11">Modification de la date de naissance</h1>  
+                <button type="button" class="btn btn-primary col-1 mb-3 fs-1" id="retour">&#127968;</button>
+            </div>
+            <div class="form-group row mt-4">
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <select class="form-select" id="utilisateur">
+                            <option selected>Sélectionner un utilisateur</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group">
+                            <span class="input-group-text">Date de naissance</span>
+                            <input class="form-control" type="date" id="naissance">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                    <button class="btn btn-primary">Mettre à jour</button>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

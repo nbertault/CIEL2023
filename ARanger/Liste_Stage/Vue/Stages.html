@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Liste stages</title><script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Stages.js"></script>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <form>
+                <h1> Liste des stages 2024</h1>
+                <div class="input-group mt-5">
+                    <span class="input-group-text">Tuteurs lycée</span>
+                    <select class="form-select" name="TuteursLycee" id="TuteursLycee"> 
+                    </select>
+                </div>
+            </form>
+            <div class="mt-5">
+                <table id="listeStage" class="table table-striped table-bordered w-100"></table>
+            </div>
+        </div>
+    </body>
+</html>

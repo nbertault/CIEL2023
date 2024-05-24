@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.php.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/php-project/1">
+            <name>MiseEnOeuvreHighcharts</name>
+        </data>
+        <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1">
+            <library name="bootstrap" version="5.3.3">
+                <file localPath="Vues/libs/bootstrap/css/bootstrap.min.css" path="css/bootstrap.min.css"/>
+                <file localPath="Vues/libs/bootstrap/js/bootstrap.min.js" path="js/bootstrap.min.js"/>
+            </library>
+            <library name="jquery" version="3.7.1">
+                <file localPath="Vues/libs/jquery/jquery.min.js" path="jquery.min.js"/>
+            </library>
+        </libraries>
+    </configuration>
+</project>

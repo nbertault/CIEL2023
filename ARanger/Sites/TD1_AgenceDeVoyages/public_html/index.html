@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TD1 Voyage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class='pt-3'>
+                <div class="btn-group" role="toolbar">
+
+                    <div class="dropdown me-2">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Type d'hébergement
+                        </button>
+                        <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <div class="form-group mb-3">
+                                    <label class="form-label fw-bold" for="int">En intérieur</label>
+                                    <ul class="navbar-nav">
+                                        <li>
+                                            <div class="form-check ms-4">
+                                                <label class="form-check-label" for="check_hotel">
+                                                    <input type="checkbox" class="form-check-input" id="check_hotel" value="hotel" />
+                                                    Hotel</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check ms-4">
+                                                <label class="form-check-label" for="check_hote">
+                                                    <input type="checkbox" class="form-check-input" id="check_hote" value="hote" />
+                                                    Chambre d'hôte</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check ms-4">
+                                                <label class="form-check-label" for="check_gite">
+                                                    <input type="checkbox" class="form-check-input" id="check_gite" value="gite" />
+                                                    Gîte</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <div class="form-group mb-3">
+                                    <label class="form-label fw-bold" for="ext">En plein air</label>
+                                    <ul class="navbar-nav">
+                                        <li>
+                                            <div class="form-check ms-4">
+                                                <label class="form-check-label" for="check_tente">
+                                                    <input type="checkbox" class="form-check-input" id="check_tente" value="tente" />
+                                                    Tente</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check ms-4">
+                                                <label class="form-check-label" for="check_caravane">
+                                                    <input type="checkbox" class="form-check-input" id="check_caravane" value="caravane" />
+                                                    Caravane</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check ms-4">
+                                                <label class="form-check-label" for="bungalow">
+                                                    <input type="checkbox" class="form-check-input" id="check_bungalow" value="bungalow" />
+                                                    Bungalow</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown me-2">
+                        <div class="input-group">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="modal" data-bs-target="#myModal">
+                                &#128205; Localisation
+                            </button>
+                            <div class="p-2" aria-labelledby="dropdownMenuButton2">
+                                <!-- The Modal --> 
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Localisation</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <div class="form-group mb-3">
+                                                    <label class="form-label" for="code">Code Postal</label>
+                                                    <input type="text" class="form-control w-50" id="code"/>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="distance" class="form-label">Distance (km)</label>
+                                                    <input type="range" class="form-range" min="0" max="100" id="distance">
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-1">
+                                                        0km
+                                                    </div>
+                                                    <div class="col-4">
+                                                    </div>
+                                                    <div class="col-1">
+                                                        50km
+                                                    </div>
+                                                    <div class="col-4">
+                                                    </div>
+                                                    <div class="col-1">
+                                                        100km
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Valider</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group me-2 h-50">
+                        <input type="text" class="form-control w-50" id="Recherche" placeholder="Rechercher"/>
+                        <span class="input-group-text">&#128270;</span>
+                    </div>
+
+                    <div class="input-group h-50">
+                        <button type="submit" class="btn btn-primary">Filtrer</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
